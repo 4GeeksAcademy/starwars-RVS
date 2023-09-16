@@ -1,7 +1,7 @@
 import React from "react";
-import { People } from "../component/people";
-import { Vehicles } from "../component/vehicles";
-import { Planets } from "../component/planets";
+import { People } from "../component/People";
+import { Vehicles } from "../component/Vehicles";
+import { Planets } from "../component/Planets";
 
 export const Home = () => {
   return (
