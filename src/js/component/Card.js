@@ -39,7 +39,7 @@ export const Card = ({ data, object }) => {
     <div className="m-2">
       <img
         src={imagenUrl}
-        className="card-img-top"
+        className="card-img-top rounded-3"
         alt={object}
         title={data.name}
         onError={() => {
@@ -50,13 +50,13 @@ export const Card = ({ data, object }) => {
       <div className="card-body">
         <h5 className="card-title">{data.name}</h5>
         <p className="card-text">
-          <b>Description</b>: A {object} within the Star Wars universe
+          <b>Description</b>: A {object} In StarWars!
         </p>
         <div className="d-flex justify-content-between">
           <Link
             to={linkUrl}
-            className="btn btn-light text-primary border-primary">
-            Learn more!
+            className="btn btn-primary text-white border-primary rounded">
+            Learn more
           </Link>
           <button
             className="border-warning fs-5 btn text-warning"

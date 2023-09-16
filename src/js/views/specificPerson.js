@@ -36,7 +36,7 @@ export const SpecificPerson = () => {
         <div className="row">
           <div className="col-lg-7 col-12 text-center">
             <img
-              className="rounded-3"
+              className="rounded"
               src={imagenUrl}
               alt={character.name}
               title={character.name}

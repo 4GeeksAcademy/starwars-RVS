@@ -7,14 +7,14 @@ export const Navbar = () => {
   const favorites = store.favorites;
 
   return (
-    <nav className="navbar navbar-light fixed-top bg-light d-flex px-5">
+    <nav className="navbar navbar-light fixed-top bg-dark d-flex px-5">
       <Link to="/">
-        <i className="fa-solid fa-jedi fs-5 text-dark">STAR WARS</i>
+        <i className="fs-5 text-white ">STAR WARS</i>
       </Link>
 
       <div className="btn-group">
         <button
-          className="btn btn-primary dropdown-toggle "
+          className="btn btn-success dropdown-toggle "
           type="button"
           id="dropdownMenuClickableOutside"
           data-bs-toggle="dropdown"
@@ -44,8 +44,8 @@ export const Navbar = () => {
                       (favorite.type === "person"
                         ? "/characters/"
                         : favorite.type === "vehicle"
-                        ? "/vehicles/"
-                        : "/planets/") + `${favorite.uid}`
+                          ? "/vehicles/"
+                          : "/planets/") + `${favorite.uid}`
                     }>
                     {favorite.name}
                   </Link>

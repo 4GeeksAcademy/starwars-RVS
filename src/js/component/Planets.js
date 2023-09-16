@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Card } from "./Card";
 
-export const PlanetaUnico = () => {
+export const Planets = () => {
   const { store } = useContext(Context);
   const planets = store.planets;
 

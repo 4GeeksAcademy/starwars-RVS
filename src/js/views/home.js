@@ -6,18 +6,18 @@ import { Planets } from "../component/Planets";
 export const Home = () => {
   return (
     <>
-      <section className="characters my-5" style={{ background: "#fcfcfc" }}>
-        <h1 className="ps-5 text-danger">Characters</h1>
+      <section className="characters my-5 border border-primary" >
+        <h1 className="border border-primary ps-5 text-primary">Characters</h1>
         <div className="container-xxl d-flex overflow-auto">{<People />}</div>
       </section>
-      <section className="vehicles my-5" style={{ background: "#fcfcfc" }}>
-        <h1 className="ps-5 text-danger">Vehicles</h1>
+      <section className="vehicles my-5 border border-primary">
+        <h1 className="border border-primary ps-5 text-primary">Vehicles</h1>
         <div className="container-xxl d-flex overflow-auto">
           <Vehicles />
         </div>
       </section>
-      <section className="planets my-5" style={{ background: "#fcfcfc" }}>
-        <h1 className="ps-5 text-danger">Planets</h1>
+      <section className="border border-primary planets my-5">
+        <h1 className="border border-primary ps-5 text-primary">Planets</h1>
 
         <div className="container-xxl d-flex overflow-auto">
           <Planets />
