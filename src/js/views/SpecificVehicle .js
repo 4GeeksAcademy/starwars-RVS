@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-export const VehiculoUnico = () => {
+export const SpecificVehicle = () => {
   const { id } = useParams();
   const [vehicle, setVehicle] = useState();
   const [imagenUrl, setImagenUrl] = useState(

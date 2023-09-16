@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-export const PlanetaUnico = () => {
+export const SpecificPlanet = () => {
   const { id } = useParams();
   const [planet, setPlanet] = useState();
   const [imagenUrl, setImagenUrl] = useState(

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
-export const PersonajeUnico = () => {
+export const SpecificPerson = () => {
   const { id } = useParams();
   const [character, setCharacter] = useState();
   const [imagenUrl, setImagenUrl] = useState(

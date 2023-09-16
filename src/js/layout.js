@@ -6,9 +6,9 @@ import { Home } from "./views/home";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/Navbar";
-import { PersonajeUnico } from "./views/personajeunico";
-import { VehiculoUnico } from "./views/vehiculounico";
-import { PlanetaUnico } from "./views/planetaunico";
+import { SpecificPerson } from "./views/specificPerson.js";
+import { SpecificVehicle } from "./views/specificVehicle.js";
+import { SpecificPlanet } from "./views/specificPlanet.js";
 
 //create your first component
 const Layout = () => {
@@ -23,9 +23,9 @@ const Layout = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/characters/:id" element={<PersonajeUnico />} />
-            <Route path="/vehicles/:id" element={<PlanetaUnico />} />
-            <Route path="/planets/:id" element={<VehiculoUnico />} />
+            <Route path="/characters/:id" element={<SpecificPerson />} />
+            <Route path="/vehicles/:id" element={<SpecificVehicle />} />
+            <Route path="/planets/:id" element={<SpecificPlanet />} />
             <Route path="*" element={<h1>Not found!</h1>} />
           </Routes>
         </ScrollToTop>
