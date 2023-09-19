@@ -50,7 +50,7 @@ export const Navbar = () => {
                     {favorite.name}
                   </Link>
                   <i
-                    className="fa-solid fa-x mt-1"
+                    className="fa-solid fa-trash mt-1"
                     onClick={() => {
                       actions.removeFavorite(favorite.name);
                     }}></i>
